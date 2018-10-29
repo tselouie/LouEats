@@ -1,0 +1,65 @@
+/*!
+ * Start Bootstrap - Portfolio Item (https://startbootstrap.com/template-overviews/portfolio-item)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
+ */
+
+ @import "node_modules/direction-reveal/styles/direction-reveal.scss";
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+
+#logo-hover:hover {
+opacity:0.5;
+}
+#featured{
+  margin-bottom:30px;
+}
+#foodmenu{
+ margin-top: 10%;
+}
+#menurow2{
+  margin-top:12px;
+  margin-bottom:5%;
+}
+.card-container{
+  height:360px;
+  width:320px;
+  margin-right:10px;
+  perspective:850;
+  transition: all 1.5s ease;
+  transform-style: preserve-3d;
+}
+.back{
+  top:0;
+  left:0;
+
+  position: absolute;
+  height:360px;
+  width:320px;
+  transform: rotateY(180deg);
+  background: rgb(248, 218, 218);
+  text-align: left;
+  
+}
+
+h3{
+  margin-left:0;
+}
+
+.col-sm{
+  width:320px;
+}
+.card-container:hover{
+  transform: rotateY(180deg);
+  opacity:0.8;
+
+}
