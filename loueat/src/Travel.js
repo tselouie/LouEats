@@ -53,7 +53,7 @@ class Travel extends Component {
 <span>
   <img className="img-fluid"  src="img/cherryblossom.jpg" align="left" alt=""style={{ height: "40px", width: "200px"}}/>
 </span>
-<span id= "zone">Kyoto</span>
+<span id= "zone">Barcelona</span>
  </a>
 </div> 
 
@@ -61,16 +61,16 @@ class Travel extends Component {
 <span>
   <img className="img-fluid"  src="img/cherryblossom.jpg" align="left" alt=""style={{ height: "40px", width: "200px"}}/>
 </span>
-<span id= "zone">Hakone</span>
+<span id= "zone">Marseilles</span>
  </a>
 </div> 
 
-<h2 id="continentNA" >North America<img className="img-fluid" src="img/NA.jpg"style={{ height: "30px", width: "35px"}}/></h2>
+<h2 id="continentNA" >North America<img className="img-fluid" alt="" src="img/NA.jpg"style={{ height: "30px", width: "35px"}}/></h2>
 <div className="row"id="asia1" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}><a href="google.com">
 <span>
   <img className="img-fluid"  src="img/cherryblossom.jpg" align="left" alt=""style={{ height: "40px", width: "200px"}}/>
 </span>
-<span id= "zone">Kyoto</span>
+<span id= "zone">PEI</span>
  </a>
 </div> 
 
@@ -78,7 +78,7 @@ class Travel extends Component {
 <span>
   <img className="img-fluid"  src="img/cherryblossom.jpg" align="left" alt=""style={{ height: "40px", width: "200px"}}/>
 </span>
-<span id= "zone">Hakone</span>
+<span id= "zone">Florida</span>
  </a>
 </div> 
 

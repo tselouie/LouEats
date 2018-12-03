@@ -5,8 +5,8 @@ class Featured extends Component {
   render() {
     return (
     <div id="featured">
-        <h1 className="my-4">Featured
-        <small>Food/Article/Trips</small>
+        <h1 className="my-4" align="left">Recent~ 
+        <small><i class="fas fa-drumstick-bite"></i>Food<i class="fas fa-plane-departure"></i>Trips</small>
       </h1>
 
       <div className="row">

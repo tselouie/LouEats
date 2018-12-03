@@ -35,7 +35,9 @@ code {
  font-size:20px;
   font-family: 'Sedgwick Ave';
 }
-
+#featured{
+  margin-top:80px;
+}
 
 #continentAsia{
 border-style: solid;
