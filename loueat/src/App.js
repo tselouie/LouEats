@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Home';
 import Food from './Food';
 import Travel from './Travel';
+import Hakone from './Hakone';
 import NotFound from './NotFound';
 import { Route, Switch } from 'react-router-dom';
 
@@ -20,6 +21,12 @@ class App extends Component {
           <Food />
         )} />
         <Route exact path='/Travel' render={() => (
+          <Travel />
+        )} />
+          <Route exact path='/hakone' render={() => (
+          <Hakone />
+        )} />
+          <Route exact path='/tokyo' render={() => (
           <Travel />
         )} />
 

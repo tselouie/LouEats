@@ -6,7 +6,7 @@ class Featured extends Component {
     return (
     <div id="featured">
         <h1 className="my-4" align="left">Recent~ 
-        <small><i class="fas fa-drumstick-bite"></i>Food<i class="fas fa-plane-departure"></i>Trips</small>
+        <small><i className="fas fa-drumstick-bite"></i>Food<i className="fas fa-plane-departure"></i>Trips</small>
       </h1>
 
       <div className="row">
@@ -16,15 +16,19 @@ class Featured extends Component {
         </div>
 
         <div className="col-md-4">
-          <h3 className="my-3">Tsukiji market</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-          <h3 className="my-3">Project Details</h3>
-          <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
-          </ul>
+          <h3 className="my-3">Japan + China</h3>
+          <p>In the upcoming two week vacation we are staying 1 week in Japan, and 1 week in China.</p>
+          <h3 className="my-3"align="left">Places we will be visiting:</h3>
+          <div align="left">
+          <h5><a href="tokyo"><i className="fas fa-caret-right"></i>Tokyo</a></h5> 
+          <h5><a href="hakone"> <i className="fas fa-caret-right"></i>Hakone</a></h5>
+          <h5><a href="hongkong"><i className="fas fa-caret-right"></i>Hong Kong</a></h5>
+          <h5><a href="guangzhou"><i className="fas fa-caret-right"></i>GuangZhou</a></h5>
+
+
+          </div>
+      
+         
         </div>
 
       </div>
