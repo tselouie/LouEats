@@ -24,7 +24,7 @@ class Hakone extends Component {
 					</div>
 					<div>
 
-                        <h2 style = {{height: 50, margin:0}}>Post Title</h2>
+                        <h2 style = {{height: 50, margin:0}}>First Post!</h2>
                             
                             <hr style={{margin:0, width:400 }}/>
                            
