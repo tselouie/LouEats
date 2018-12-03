@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sedgwick+Ave');
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +13,62 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+#asia1{
+  padding:0;
+  margin:0;
+  border:0;
+  background-color:#1f2122;
+  box-shadow: 40px 2px 40px 0 rgb(238, 208, 208) inset;
+  
+  
+}
+
+#zone{
+  color:white;
+  padding-top:8px;
+  padding-bottom:0px;
+ padding-left:4px;
+ margin-bottom:0;
+ font-size:20px;
+  font-family: 'Sedgwick Ave';
+}
+
+
+#continentAsia{
+border-style: solid;
+border-top-width:2;
+border-right-width:0;
+border-bottom-width:0;
+  padding:0;
+  margin-top:80px;
+  margin-bottom:0;
+  text-align: left;
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+#continentEU{
+  border-style: solid;
+border-top-width:2;
+border-right-width:0;
+border-bottom-width:0;
+  padding:0;
+  margin-top:20px;
+  margin-bottom:0;
+  text-align: left;
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+#continentNA{
+  border-style: solid;
+border-top-width:2;
+border-right-width:0;
+border-bottom-width:0;
+  padding:0;
+  margin-top:20px;
+  margin-bottom:0;
+  text-align: left;
+  font-family: 'Sedgwick Ave', cursive;
 }
