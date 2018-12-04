@@ -3,8 +3,11 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
  */
-
+ @import url('https://fonts.googleapis.com/css?family=Roboto|Sedgwick+Ave');
  @import "node_modules/direction-reveal/styles/direction-reveal.scss";
+
+ @-webkit-keyframes flip-diagonal-1-fwd{0%{-webkit-transform:translateZ(0) rotate3d(1,1,0,0deg);transform:translateZ(0) rotate3d(1,1,0,0deg)}100%{-webkit-transform:translateZ(160px) rotate3d(1,1,0,180deg);transform:translateZ(160px) rotate3d(1,1,0,180deg)}}@keyframes flip-diagonal-1-fwd{0%{-webkit-transform:translateZ(0) rotate3d(1,1,0,0deg);transform:translateZ(0) rotate3d(1,1,0,0deg)}100%{-webkit-transform:translateZ(160px) rotate3d(1,1,0,180deg);transform:translateZ(160px) rotate3d(1,1,0,180deg)}}
+ @keyframes flip-diagonal-1-fwd{0%{-webkit-transform:translateZ(0) rotate3d(1,1,0,0deg);transform:translateZ(0) rotate3d(1,1,0,0deg)}100%{-webkit-transform:translateZ(160px) rotate3d(1,1,0,180deg);transform:translateZ(160px) rotate3d(1,1,0,180deg)}}@keyframes flip-diagonal-1-fwd{0%{-webkit-transform:translateZ(0) rotate3d(1,1,0,0deg);transform:translateZ(0) rotate3d(1,1,0,0deg)}100%{-webkit-transform:translateZ(160px) rotate3d(1,1,0,180deg);transform:translateZ(160px) rotate3d(1,1,0,180deg)}}
 
 body {
   padding-top: 54px;
@@ -19,6 +22,7 @@ body {
 
 #logo-hover:hover {
 opacity:0.5;
+
 }
 #featured{
   margin-bottom:30px;
@@ -30,26 +34,28 @@ opacity:0.5;
   margin-top:12px;
   margin-bottom:5%;
 }
-.card-container{
+/* .card-container{
   height:360px;
   width:320px;
   margin-right:10px;
   perspective:850;
-  transition: all 1.5s ease;
+  
   transform-style: preserve-3d;
-}
-.back{
+} */
+/* .back{
   top:0;
   left:0;
 
   position: absolute;
   height:360px;
   width:320px;
+  -webkit-animation: flip-diagonal-1-fwd;
+  animation:flip-diagonal-1-fwd;
   transform: rotateY(180deg);
   background: rgb(248, 218, 218);
   text-align: left;
   
-}
+} */
 
 h3{
   margin-left:0;
@@ -58,9 +64,19 @@ h3{
 .col-sm{
   width:320px;
 }
+#ramenclick{
+  opacity:1;
+  font-size:60px;
+  font-family: 'Sedgwick Ave';
+}
+
 .card-container:hover{
-  transform: rotateY(180deg);
-  opacity:0.8;
+  opacity: 0.6;
+  transition: opacity 1s ease-in-out;
+  transition: all 2s ease-in;
+  
+  color:black;
+  
 
 }
 a:link{
@@ -69,6 +85,4 @@ a:link{
 p{
   color:black;
 }
-/* .row :hover{
-opacity:0.9;
-} */
+

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Template from './Template';
+import {Link} from 'react-router-dom';
+
 
 class Food extends Component {
 
@@ -25,71 +27,89 @@ class Food extends Component {
 
   render() {
     return (
+      
 <Template menu="Food">
 
 <div className="container-fluid" id="foodmenu">
   <div className="row">
-    <div className="col-sm">
-<div className="card-container" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-{this.state.isHovering && <a href="/noodles" ><div className="back"><h3>Ramen</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id enim nec dolor cursus posuere at non dolor. Sed eget tellus non dolor viverra congue non non velit. Duis fermentum viverra erat, ut dapibus magna porttitor ac. Vivamus turpis lorem, pharetra ac elit nec, convallis aliquam lectus. Suspendisse consequat, ligula at fermentum egestas, massa est pharetra ante, a posuere dolor mauris id nibh. Proin a est dictum, posuere dui nec, venenatis magna. Quisque ut malesuada magna. Vivamus ac turpis nec justo ultricies tristique id nec nisl.</p></div></a>}
-  
-    <img src="https://loremflickr.com/320/360/noodles"  alt="noodlepic" className="img-fluid"/>
 
-  </div>
+    <div className="col-sm">
+  <Link to="/noodles" >    
+<div className="card-container" id="ramen"   onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
+<img src="https://loremflickr.com/320/360/noodles"  alt="noodlepic" className="img-fluid"/>
+{this.state.isHovering && 
+  <div>
+      <div style ={{position: 'absolute', top:140, left: 120}} id="ramenclick"> Ramen</div>
+ 
+    </div>}
+
+  </div> 
+  </Link>
     </div>
 
        <div className="col-sm">
+       <Link to="/spicy" >
 <div className="card-container" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-{this.state.isHovering && <a href="/spicy" ><div className="back"><h3>Exotic Foods</h3>
-</div></a>}
-  
-    <img src="https://loremflickr.com/320/360/spicy"  alt="exoticfood" className="img-fluid"/>
+<img src="https://loremflickr.com/320/360/spicy"  alt="exoticfood" className="img-fluid"/>
+{this.state.isHovering && 
+<div>
+      <div style ={{position: 'absolute', top:140, left: 120}} id="ramenclick"> Spicy</div>
+</div>}
   
   </div>
+  </Link>
     </div>
     
 
     <div className="col-sm">
-<div className="card-container" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-{this.state.isHovering && <a href="/drinks" ><div className="back"><h3>Drinks</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id enim nec dolor cursus posuere at non dolor. Sed eget tellus non dolor viverra congue non non velit. Duis fermentum viverra erat, ut dapibus magna porttitor ac. Vivamus turpis lorem, pharetra ac elit nec, convallis aliquam lectus. Suspendisse consequat, ligula at fermentum egestas, massa est pharetra ante, a posuere dolor mauris id nibh. Proin a est dictum, posuere dui nec, venenatis magna. Quisque ut malesuada magna. Vivamus ac turpis nec justo ultricies tristique id nec nisl.</p></div></a>}
+<Link to="/drinks">
+<div className="card-container" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}> 
+<img src="https://loremflickr.com/320/360/drinks"  alt="drinkspic" className="img-fluid"/>
+{this.state.isHovering && <div>
+  <div style ={{position: 'absolute', top:140, left: 100}} id="ramenclick"> Drinks</div>
+</div>}
   
-    <img src="https://loremflickr.com/320/360/drinks"  alt="drinkspic" className="img-fluid"/>
-
   </div>
-    </div>
+    </Link>
+  </div>
   </div>
 
  <div className="row" id="menurow2">
     <div className="col-sm">
-<div className="card-container" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-{this.state.isHovering && <a href="/desserts" ><div className="back"><h3>Dessert</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id enim nec dolor cursus posuere at non dolor. Sed eget tellus non dolor viverra congue non non velit. Duis fermentum viverra erat, ut dapibus magna porttitor ac. Vivamus turpis lorem, pharetra ac elit nec, convallis aliquam lectus. Suspendisse consequat, ligula at fermentum egestas, massa est pharetra ante, a posuere dolor mauris id nibh. Proin a est dictum, posuere dui nec, venenatis magna. Quisque ut malesuada magna. Vivamus ac turpis nec justo ultricies tristique id nec nisl.</p></div></a>}
+    <Link to="/desserts" >
+<div className="card-container" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}> 
+<img src="https://loremflickr.com/320/360/dessert"  alt="dessertspic" className="img-fluid"/>
+{this.state.isHovering && <div>
+  <div style ={{position: 'absolute', top:140, left: 75}} id="ramenclick"> Desserts</div>
+</div>}
   
-    <img src="https://loremflickr.com/320/360/dessert"  alt="dessertspic" className="img-fluid"/>
-  </div>
+   
+  </div></Link>
     </div>
 
        <div className="col-sm">
+       <Link to="/meat" >
 <div className="card-container" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-{this.state.isHovering && <a href="/meat" ><div className="back"><h3>Meat</h3>
-</div></a>}
+<img src="https://loremflickr.com/320/360/meat"  alt="meatpic" className="img-fluid"/>
+{this.state.isHovering && <div>
+  <div style ={{position: 'absolute', top:140, left: 120}} id="ramenclick"> Meat</div>
+</div>}
 
-    <img src="https://loremflickr.com/320/360/meat"  alt="meatpic" className="img-fluid"/>
- 
-  </div>
+  </div></Link>
     </div>
     
 
     <div className="col-sm">
+    <Link to="/snacks" >
 <div className="card-container" onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-{this.state.isHovering && <a href="/snacks" ><div className="back"><h3>Snacks</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id enim nec dolor cursus posuere at non dolor. Sed eget tellus non dolor viverra congue non non velit. Duis fermentum viverra erat, ut dapibus magna porttitor ac. Vivamus turpis lorem, pharetra ac elit nec, convallis aliquam lectus. Suspendisse consequat, ligula at fermentum egestas, massa est pharetra ante, a posuere dolor mauris id nibh. Proin a est dictum, posuere dui nec, venenatis magna. Quisque ut malesuada magna. Vivamus ac turpis nec justo ultricies tristique id nec nisl.</p></div></a>}
+<img src="https://loremflickr.com/320/360/snacks"  alt="snack" className="img-fluid"/>
+{this.state.isHovering && <div >
+  <div style ={{position: 'absolute', top:140, left: 100}} id="ramenclick"> Snacks</div>
+</div>}
  
-    <img src="https://loremflickr.com/320/360/snacks"  alt="snack" className="img-fluid"/>
+    
 
-  </div>
+  </div></Link>
     </div>
   </div>
 </div>
